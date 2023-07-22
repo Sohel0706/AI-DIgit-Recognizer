@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+      
+    <title>
+        Draw with the mouse in a HTML5 canvas
+    </title>
+      
+    <style>
+        * {
+            overflow: hidden;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1 id = "heading">Drawn number predictor</h1>
+    <h3 id = "instructions">Draw the numbers distinctly for the machine to recognize it</h3>
+    <hr>
+    <form enctype="multipart/form-data" method = "post">
+        <div id = "canvas-div">
+        <canvas id="canvas"></canvas>
+        <h1>Prediction is {{ data }}</h1>
+        </div>
+        <div id = "save-div">
+            <button class = "btn" id = "clear" type = "button">Clear</button>
+            <button class = "btn" id = "save" type = "submit">Predict</button>
+        </div>
+        <input type="hidden" id = 'url' name="url" value="">
+    </form>
+    <script src="{{ url_for('static', filename='js/drawing.js') }}"></script>
+</body>
+</html>

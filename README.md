@@ -20,10 +20,17 @@ Steps to reproduce :
 
 Under folder AI-DIgit-Recognizer :
 
-1. digit_recog_env -> virtual environment files for the packages to load
+1. digit_recog_env -> virtual environment files for the packages to load.
+(If not present run pip install -r requirements.txt inside preferred virtual environment or OS.)
 2. ann.ipynb -> ipynb file used to create and train the model
 3. app.py -> creation of flask app and definition of api
 4. templates folder -> contains html template files
 5. static folder -> contains css and js files for UI visuals and canvas draw mechanism
+6. requirements.txt -> all dependencies without versioning so that latest version in installed
 
+Run it like any flask app by typing ..
+flask run
+.. in console
+Then go to http://127.0.0.1:5000/predict to use the UI. 
+api name : /predict
 

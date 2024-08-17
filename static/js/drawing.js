@@ -65,8 +65,8 @@ function clearcanvas1()
 
 // Resizes the canvas to the available size of the window.
 function resize(){
-  ctx.canvas.width = 400;
-  ctx.canvas.height = 400;
+  ctx.canvas.width = 600;
+  ctx.canvas.height = 600;
 }
     
 // Stores the initial position of the cursor

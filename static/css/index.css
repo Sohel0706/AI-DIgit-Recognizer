@@ -1,6 +1,6 @@
 #canvas {
-    width : 400px;
-    height : 400px;
+    width : 600px;
+    height : 600px;
     background-color: black;
     float: left;
 }
@@ -12,17 +12,23 @@
     box-sizing: border-box;
     border: 20px solid #969696;
     margin : 10px;
+    padding : 5px;
 }
 
 body {
     text-align: center;
+    background-color: blanchedalmond;
 }
 #heading {
-    color: orange;
+    color : darkslategrey;
 }
 
 h3 {
-    color : green;
+    color :rgb(22, 0, 122);
+}
+
+#details{
+    color: rgb(117, 0, 0);
 }
 
 .btn {

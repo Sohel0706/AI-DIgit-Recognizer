@@ -19,13 +19,19 @@
 </head>
   
 <body>
-    <h1 id = "heading">Drawn number predictor</h1>
+    <h1 id = "heading">Drawn number interpreter</h1>
     <h3 id = "instructions">Draw the numbers distinctly for the machine to recognize it</h3>
+    <h3 id = "details">At the heart of the app there is a Convolutional Neural Network which has been trained on the mnist digits dataset for 50 epochs. It can classify any properly hand drawn digit using Supervised Machine Learning.</h3>
     <hr>
     <form enctype="multipart/form-data" method = "post">
         <div id = "canvas-div">
         <canvas id="canvas"></canvas>
-        <h1>Prediction is {{ data }}</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Machine thinks it is {{ data }}</h1>
         </div>
         <div id = "save-div">
             <button class = "btn" id = "clear" type = "button">Clear</button>

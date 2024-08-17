@@ -40,12 +40,11 @@ def save():
         array = array / 255.0
   
         # Displaying the image 
-        cv2.imwrite("reconstructed.png", new_img)
+        # cv2.imwrite("reconstructed.png", new_img)
 
-
-        img_file = open('image1112.png', 'wb')
-        img_file.write(decoded_data)
-        img_file.close()
+        # img_file = open('image1112.png', 'wb')
+        # img_file.write(decoded_data)
+        # img_file.close()
 
         from tensorflow.keras.models import load_model
         model = load_model('number_recognizer50.h5')
@@ -54,7 +53,5 @@ def save():
         pred = np.argmax(pred)
         print("Prediction = {0}".format(pred))
         return render_template("index.html", data = pred)
-        
     
-if __name__ == '__main__':
-   app.run(debug = True)
+    

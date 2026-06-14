@@ -34,3 +34,11 @@ flask run
 Then go to http://127.0.0.1:5000/predict to use the UI. 
 api name : /predict
 
+#14-06-2026
+To upgrade python in windows : 
+winget upgrade Python.Python
+
+Install opencv-python library to use cv2
+Check version :
+python -c "import cv2; print(cv2.__version__)"
+

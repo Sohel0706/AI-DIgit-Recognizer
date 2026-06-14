@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request
 import base64
 import io
@@ -9,7 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
 app = Flask(__name__)
 
-@app.route("/predict", methods = ["GET", "POST"])
+@app.route("/recognize_digit", methods = ["GET", "POST"])
 def save():
     if request.method == "GET":
 

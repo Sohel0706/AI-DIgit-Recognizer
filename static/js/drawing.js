@@ -80,8 +80,11 @@ let paint = false;
 // an event e is triggered to the coordinates where 
 // the said event is triggered.
 function getPosition(event){
-  coord.x = event.clientX// - canvas.offsetLeft;
-  coord.y = (event.clientY - canvas.offsetTop);
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;    // relationship bitmap vs. element
+  const scaleY = canvas.height / rect.height;
+  coord.x = (event.clientX - rect.left) * scaleX;
+  coord.y = (event.clientY - rect.top) * scaleY;
 }
   
 // The following functions toggle the flag to start
